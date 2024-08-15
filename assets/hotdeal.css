@@ -1,0 +1,346 @@
+
+.Navbar{
+    display:flex;
+    justify-content:space-between;
+    height: 80px;
+    align-items: center;
+    padding:0px 40px;
+}
+.redrun{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+li{
+    margin-left: 40px;
+}
+li:hover{
+    color:rgb(104,12,33);
+    text-decoration:underline;
+    text-underline-position:under;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 350px;
+    color:white;
+    
+}
+.Navbar::after{
+    width: 482px;
+    height: 200px;
+    background-color:rgb(118,14,37);
+    position: absolute;
+    content:"";
+    right:0;
+    z-index: -1;
+    border-radius:170px 0px 0px 0px;
+    
+}
+.search{
+    background-color:rgb(104,12,33);
+    border-radius: 20px;
+    padding:2px 10px;
+    color:white;
+}
+input[type="search"]{
+    border:none;
+    outline:none;
+    padding:7px 5px;
+    border-radius: 20px;
+    background-color:rgb(104,12,33);
+    color:white;
+}
+::placeholder{
+    color:white;
+}
+
+
+/**************heading**************/
+.heading{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(239,239,239);
+    width: 95%;
+    height: 90%;
+    border-radius: 0px 50px 0px 0px;
+    background: url(./images/slide_1.jpg);
+}
+h2{
+    font-size: 80px;
+    color:rgb(118,14,37);
+}
+h3{
+    font-size: 50px;
+    color:orange;
+}
+p{
+    font-size: 18px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+strong{
+    font-size: 50px;
+}
+.actualprice{
+    text-decoration: line-through;
+    color:#ccf;
+    margin-left: 20px;
+}
+
+.addbag{
+    display: flex;
+    margin:10px 0px;
+}
+.bagtext{
+    padding:5px 10px;
+    width:100px;
+    border:1px solid black;
+    text-align: center;
+    background-color: #ffc851;
+}
+.bagicon{
+    border:1px solid black;
+    width: 30px;
+    text-align: center;
+    padding:5px 10px;
+}
+.leftcontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 71px;
+}
+
+.rightcontent{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: right;
+
+}
+.rightcontent::after{
+    content: "";
+    width: 415px;
+    height: 500px;
+    position: absolute;
+    background-color:orange;
+    right: -25px;
+    border-radius: 0px 50px 0px 0px;
+    z-index: -1;
+}
+.rightcontent img{
+    position: relative;
+    right:-65px;
+
+}
+
+.shoesdown{
+    border-radius: 0px 50px 0px 0px;
+    position: relative;
+    top:50px;
+}
+
+.contact 
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #222;
+}
+.contact .content 
+{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h2 
+{
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+}
+.contact .content p 
+{
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.footer 
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 30px;
+}
+.footer .contactInfo 
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.footer .contactInfo .box 
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	cursor: pointer;
+}
+.footer .contactInfo .box .icon 
+{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.75em;
+	transition: 0.5s;
+}
+.footer .contactInfo .box:hover .icon 
+{
+	background: #00bcd4;
+	color: #fff;
+}
+.footer .contactInfo .box .text 
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 300;
+}
+.footer .contactInfo .box .text h3 
+{
+	font-weight: 500;
+	color: #00bcd4;
+}
+.footer .contactInfo .txt
+{
+	color: #fff;
+	margin-top: 50px;
+	font-weight: 500;
+	padding-left: 10px;
+	border-left: 50px solid #e91e63;
+	line-height: 1em;
+}
+.sci 
+{
+	position: relative;
+	display: flex;
+	gap: 30px;
+	margin: 20px 0;
+}
+.sci li 
+{
+	list-style: none;
+}
+.sci li a 
+{
+	color: #fff;
+	font-size: 2em;
+	transition: 0.5s;
+}
+.sci li a:hover 
+{
+	color: #00bcd4;
+}
+
+
+.footer .contactForm
+{
+	position: relative;
+	width: 40%;
+	background: #fff;
+	min-height: 100px;
+	padding: 60px;
+} 
+.footer .contactForm h2 
+{
+	font-size: 2em;
+	color: #333;
+	font-weight: 500;
+}
+.footer .contactForm .inputBox 
+{
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
+.footer .contactForm .inputBox input, 
+.footer .contactForm .inputBox textarea 
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 1.1em;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.footer .contactForm .inputBox span 
+{
+	position: absolute;
+	left: 0;
+	pointer-events: none;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 1.1em;
+	color: #666;
+	transition: 0.5s;
+}
+.footer .contactForm .inputBox input:focus ~ span, 
+.footer .contactForm .inputBox textarea:focus ~ span,
+.footer .contactForm .inputBox input:valid ~ span, 
+.footer .contactForm .inputBox textarea:valid ~ span 
+{
+	color: #e91e63;
+	font-size: 0.9em;
+	transform: translateY(-20px);
+}
+.footer .contactForm .inputBox input[type="submit"]
+{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+/* lets make it responsive */
+@media (max-width: 991px)
+{
+	.contact
+	{
+		padding: 50px;
+	}
+	.footer
+	{
+		flex-direction: column;
+	}
+	.footer .contactInfo,
+	.footer .contactForm
+	{
+		width: 100%;
+	}
+	.footer .contactForm
+	{
+		padding: 50px 30px;
+	}
+}
